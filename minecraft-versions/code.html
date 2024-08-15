@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código do Site das Versões do Minecraft</title>
+</head>
+<body>
+    <h1>Códigos do Site das Versões do Minecraft</h1>
+
+    <h2>HTML:</h2>
+
+    <pre>
+        <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="pt-br"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title&gt;Histórico das Versões da Edição Java do Minecraft&lt;/title&gt;
+                &lt;link rel="shortcut icon" href="imagens/mine-icon.ico" type="image/x-icon"&gt;
+                &lt;link rel="stylesheet" href="style.css"&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+        
+                &lt;header&gt;
+                    &lt;h1&gt;A HISTÓRIA DOS JOGOS&lt;/h1&gt;
+                    &lt;p&gt;O desenvolvimento e a evolução dos jogos ao longo dos anos&lt;/p&gt;
+                &lt;/header&gt;
+                &lt;nav&gt;
+                    &lt;a href="https://www.youtube.com/@jhonychester13/videos" target="_blank"&gt;YouTube&lt;/a&gt;
+                    &lt;a href="https://www.instagram.com/jonathan.marzurkiewicz/" target="_blank"&gt;Instagram&lt;/a&gt;
+                    &lt;a href="https://www.minecraft.net/pt-br/download" target="_blank"&gt;Download Minecraft&lt;/a&gt;
+                    &lt;a href="#"&gt;Codigos Desse Site&lt;/a&gt;
+                &lt;/nav&gt;
+                &lt;main&gt;
+                    &lt;article&gt;
+                        &lt;h2&gt;VERSOES DO MINECRAFT JAVA EDITION&lt;/h2&gt;
+        
+                        &lt;p&gt;Minecraft: Edição Java está em constante desenvolvimento desde 10 de maio de 2009. Conheça neste artigo cada uma de suas versões e como o jogo evoluiu com o passar do tempo&lt;/p&gt;
+                        &lt;h3&gt;Versão Pre-Classic&lt;/h3&gt;
+        
+                        &lt;div class="container"&gt;
+                            &lt;p&gt;Pre-Classic foi a fase inicial de desenvolvimento do Minecraft, na qual a mecânica e os elementos básicos do jogo foram desenvolvidos, testados e aprimorados no período de menos de uma semana - de 10 a 16 de maio de 2009. Não era originalmente liberado ao público, mas algumas versões agora podem ser reproduzidas pelo launcher.&lt;/p&gt;
+                            &lt;img src="imagens/steve-gif.webp" alt="Gif do Steve Pre-Classic"&gt;
+                        &lt;/div&gt;
+        
+                        &lt;img src="imagens/pre-classic.webp" alt="Minecraft Pre-Classic"&gt;
+                        &lt;h3&gt;Versão Classic&lt;/h3&gt;
+                        &lt;p&gt;Edição Java Classic foi a primeira fase de desenvolvimento longa do jogo, na qual foi constantemente aprimorada e atualizada ao longo de vários meses. Ocorreu entre 16 de maio e 23 de dezembro de 2009. O modo de jogo original era Criativo, mas em 1º de setembro de 2009 começou o desenvolvimento do modo Sobrevivência sob o nome de Survival Test.&lt;/p&gt;
+                        &lt;img src="imagens/classic.jpeg" alt="Minecraft Classic"&gt;
+                        &lt;div class="video"&gt;
+                            &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/22HM__fvu4A?si=vPDQPu8ZeVxgDxYp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt;
+                            &lt;div&gt;&lt;a href="https://classic.minecraft.net/" class="botao" target="_blank"&gt;Jogue a Versão Classic Pelo Navegador&lt;/a&gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;h3&gt;Versão Indev&lt;/h3&gt;
+                        &lt;div class="container2"&gt;
+                            &lt;p&gt;A fase de desenvolvimento do Indev começou em 23 de dezembro de 2009 e terminou em 27 de fevereiro de 2010. Foi o sucessor do Survival Test anterior e continuou expandindo os aspectos de sobrevivência do jogo, tornando-o bastante mais como a jogabilidade atual. As versões nesse estágio não eram numeradas ou usavam o mesmo número.&lt;/p&gt;
+                            &lt;img src="imagens/steve-indev.png" alt="Steve da versão Indev"&gt;
+                        &lt;/div&gt;
+                    &lt;/article&gt;
+                &lt;/main&gt;
+                &lt;footer&gt;
+                    &lt;p&gt;Site Criado por &lt;strong&gt;Jonathan G. Marzurkiewicz&lt;/strong&gt;&lt;/p&gt;
+                &lt;/footer&gt;
+            &lt;/body&gt
+            &lt;/html&gt;
+        </code>
+    </pre>
+
+    <h2>CSS: </h2>
+
+    <pre>
+        <code>
+
+            @charset "UTF-8";
+
+            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+            @font-face {
+                font-family: 'MineNormal';
+                src: url('fontes/mine-fonte.ttf') format('opentype');
+                font-weight: normal;
+            }
+
+            @font-face {
+                font-family: 'MineGD';
+                src: url('fontes/mine-fonte-grande.ttf') format('opentype');
+                font-weight: normal;
+            }
+
+            @font-face {
+                font-family: 'MinePQ';
+                src: url('fontes/mine-fonte-pequena.ttf') format('opentype');
+                font-weight: normal;
+            }
+
+            /*
+            Paleta de Cores: (do + claro para o + escuro)
+
+            Marrons:
+
+            #C67E48
+            #864F2B
+
+            Verdes:
+
+            #8FCA5C
+            #72B539
+            #509024
+            #395C1C
+
+            */
+
+            :root{
+
+                --marrom0: #c99974;
+                --marrom1: #c4773c;
+                --marrom2: #864F2B;
+                --marrom3: #55321b;
+
+                --verde0: #abce8d;
+                --verde1: #98cf68;
+                --verde2: #84be51;
+                --verde3: #588838;
+                --verde4: #354d21;
+
+                --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+                --fonte-titulo: 'Bebas Neue', sans-serif;
+                --fonte-mine-titulo: 'MineGD', sans-serif;
+                --fonte-mine-padrao: 'MineNormal', sans-serif;
+                --fonte-mine-pequena: 'MinePQ', sans-serif;
+            }
+
+            *{
+
+                margin: 0px;
+                padding: 0px;
+            }
+
+            body{
+
+                background-color: var(--verde0);
+            }
+
+            header{
+
+                background-image: linear-gradient(180deg, var(--verde1), var(--verde4));
+                min-height: 135px;
+                padding-top: 40px;
+                text-align: center;
+            }
+
+            header > h1{
+
+                color: white;
+                font-family: var(--fonte-titulo);
+                font-size: 3em;
+                font-weight: bold;
+                text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.425);
+                padding-bottom: 5px;
+            }
+
+            header > p{
+
+                color: white;
+                font-family: var(--fonte-padrao);
+                font-weight: bolder;
+                text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.616);
+            }
+
+            nav{
+
+                background-image: linear-gradient(180deg, var(--marrom2), var(--marrom1), var(--marrom2));
+                padding: 15px 10px 15px 10px;
+                box-shadow: 0px 10px 11px rgba(0, 0, 0, 0.397);
+                text-align: center;
+            }
+
+            nav > a{
+
+                padding: 10px;
+                text-decoration: none;
+                color: white;
+                font-family: var(--fonte-mine-padrao);
+                font-weight: normal;
+                text-shadow: 0px 0px 10px #cca98f;
+            }
+
+            nav > a:hover{
+
+                color: var(--marrom3);
+                background-color: var(--marrom0);
+                border-radius: 5px;
+                transition-duration: 0.4s;
+            }
+
+            main{
+
+                max-width: 950px;
+                min-width: 300px;
+                margin: auto;
+                background-color: white;
+                margin-bottom: 30px;
+                padding: 15px 20px;
+                border-bottom-left-radius: 9px;
+                border-bottom-right-radius: 9px;
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.438);
+            }
+
+            main h2{
+
+                color: var(--verde4);
+                font-family: var(--fonte-mine-titulo);
+                font-size: 1.8em;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.473);
+            }
+
+            main h3{
+
+                font-family: var(--fonte-mine-titulo);
+                font-size: 1.5em;
+                color: var(--verde3);
+                text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.493);
+                margin: 15px 0px;
+                background-image: linear-gradient(90deg, #9e6438, transparent);
+                text-indent: 7px;
+            }
+
+            main p{
+
+                margin: 15px 0px;
+                font-family: var(--fonte-mine-pequena);
+                font-size: 17px;
+                text-indent: 20px;
+                text-align: justify;
+                line-height: 1.6em;
+            }
+
+            main div.container{
+
+                display: flex;
+                text-align: center;
+            }
+
+            main div.container > p{
+
+                padding: 10px 0px;
+                margin: auto;
+                min-width: 270px;
+            }
+
+            main div.container > img{
+
+                min-width: 220px;
+                max-height: 500px;
+                margin: auto;
+            }
+
+            main div.video{
+
+                background-color: var(--marrom3);
+                margin: 30px -20px;
+                padding: 20px 20px 10px 20px;
+                text-align: center;
+            }
+
+            main div.video > iframe{
+
+                margin-top: 10px;
+                width: 80%;
+                border-radius: 7px;
+            }
+
+            main div.video > div{
+
+                margin: 20px 0px 10px 0px;
+            }
+
+            main div.video > div > a{
+
+                text-shadow: 0px 0px 10px white;
+                padding: 10px 10px 6px 10px;
+                color: white;
+                text-decoration: none;
+                font-family: var(--fonte-mine-pequena);
+                background-color: var(--marrom2);
+                border-radius: 7px;
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.336);
+            }
+
+            main div.video > div > a:hover{
+
+                color: var(--marrom3);
+                background-color: var(--marrom0);
+                transition-duration: 0.4s;
+            }
+
+            main img{
+
+                width: 100%;
+            }
+
+            main div.container2{
+
+                display: flex;
+                text-align: center;
+            }
+
+            main div.container2 > p{
+
+                padding: 10px 3cap;
+                margin: auto;
+                min-width: 270px;
+                max-width: 800px;
+            }
+
+            main div.container2 > img{
+
+                min-width: 115px;
+                max-height: 500px;
+                margin: auto;
+            }
+
+            footer{
+
+                padding: 13px 12px 12px 12px;
+                background-color: #304123;
+                text-align: center;
+                color: white;
+                font-family: var(--fonte-mine-pequena);
+                font-weight: 100;
+                font-size: 12px;
+            }
+
+            footer strong{
+
+                text-shadow: 0px 0px 10px rgb(115, 185, 115);
+            }
+
+        </code>
+    </pre>
+</body>
+</html>
