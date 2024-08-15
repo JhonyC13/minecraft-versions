@@ -1,5 +1,4 @@
 function carregar(){
-
     var agora = new Date()
 
     var horas1 = agora.getHours()
