@@ -1,4 +1,11 @@
+//função chamada quando a página é carregada
 function carregar(){
+    mostrarHorario()
+    iniciarAtualizacao()
+}
+
+//mostra o horário e uma mensagem que muda dependendo do horário.
+function mostrarHorario(){
     var agora = new Date()
 
     var horas1 = agora.getHours()
@@ -40,4 +47,9 @@ function carregar(){
 
         horario.innerHTML = `${horas1}:${minutos1}`
     }
+}
+
+//função que atualiza a função mostrarHorario a cada 30 segundos
+function iniciarAtualizacao(){
+    setInterval(mostrarHorario, 30000)
 }

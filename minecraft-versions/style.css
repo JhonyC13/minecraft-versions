@@ -100,10 +100,12 @@ nav{
     padding: 15px 10px 15px 10px;
     box-shadow: 0px 10px 11px rgba(0, 0, 0, 0.397);
     text-align: center;
+    line-height: 2.5;
 }
 
 nav > a{
 
+    white-space: nowrap; /* Impede a quebra de linha dentro dos links */
     padding: 10px;
     text-decoration: none;
     color: white;
@@ -126,21 +128,14 @@ nav > span{
     color: white;
     font-family: var(--fonte-mine-titulo);
     font-weight: normal;
-    text-shadow: 0px 0px 10px #ffffff;
-}
-
-nav > span#msg{
-
-    
-   /*Quero deixar pra esquerda*/
+    text-shadow: 0px 0px 10px #ffffffb6;
 }
 
 nav > span#horas{
-    
+
     background-color: var(--verde3);
     border-radius: 7px;
     box-shadow: 0px 0px 5px var(--verde2);
-    /*Quero deixar pra direita*/
 }
 
 main{
