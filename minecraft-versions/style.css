@@ -222,6 +222,7 @@ main div.video > div{
 
 main div.video > div > a{
 
+    white-space: nowrap; /* Impede a quebra de linha dentro dos links */
     text-shadow: 0px 0px 10px white;
     padding: 10px 10px 6px 10px;
     color: white;
