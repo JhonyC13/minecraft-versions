@@ -6,10 +6,10 @@ function carregar(){
 
 //mostra o horário e uma mensagem que muda dependendo do horário.
 function mostrarHorario(){
-    var agora = new Date()
+    var data = new Date();
 
-    var horas1 = agora.getHours()
-    var minutos1 = agora.getMinutes()
+    var horas1 = data.getHours();
+    var minutos1 = data.getMinutes();
 
     var horas2 = horas1;
     var minutos2 = minutos1;
@@ -30,26 +30,10 @@ function mostrarHorario(){
         msg.innerHTML = 'Boa Noite!'
     }
     
-    
-    if(horas2 < 10 && minutos2 < 10){
-
-        horario.innerHTML = `0${horas1}:0${minutos1}`
-    }
-   else if(horas2 < 10 && minutos2 >= 10){
-
-        horario.innerHTML = `0${horas1}:${minutos1}`
-    }
-    else if(horas2 > 10 && minutos2 < 10){
-
-        horario.innerHTML = `${horas1}:0${minutos1}`
-    }
-    else{
-
-        horario.innerHTML = `${horas1}:${minutos1}`
-    }
+    horas.innerHTML = data.toLocaleTimeString();
 }
 
-//função que atualiza a função mostrarHorario a cada 30 segundos
+//função que atualiza a função mostrarHorario a cada 1 segundo
 function iniciarAtualizacao(){
-    setInterval(mostrarHorario, 30000)
+    setInterval(mostrarHorario, 1000)
 }
